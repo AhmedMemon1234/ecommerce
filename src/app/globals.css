@@ -1,0 +1,780 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.NavBar{
+  background-color: rgb(255, 255, 255);
+  height: 60px;
+}
+.NavContent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  gap: 16px;
+  padding: 18px;
+  padding-left: 40px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 17px;
+}
+
+.Home{
+  transition: 0.1s ease;
+}
+.Home:hover{
+  transform: translateY(-3px);
+}
+.Products{
+  transition: 0.1s ease;
+}
+
+.Products:hover{
+  transform: translateY(-3px);
+}
+.Aboutus{
+  transition: 0.1s ease;
+}
+
+.Aboutus:hover{
+  transform: translateY(-3px);
+}
+.Services{
+  transition: 0.1s ease;
+}
+.Services:hover{
+  transform: translateY(-3px);
+}
+.Contactus{
+  transition: 0.1s ease;
+}
+.Contactus:hover{
+  transform: translateY(-3px);
+}
+
+.Logo{
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 15px;
+  margin-left: -1100px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  
+}
+.elec{
+  color: red;
+}
+.Searchicon{
+  margin-top: -25px;
+  margin-left: 710px;
+}
+.af{
+  position: absolute;
+  margin-right: 1720px;
+}
+.Parentcontent{
+  display:flex;
+  background: linear-gradient(to right, #f0f4f8, #d9e2ec);
+  height: 532px;
+  width: 100%;
+}
+
+.content{
+  display: flex;
+  
+}
+.man{
+  position:absolute;
+  margin-left: 850px;
+  margin-top: 40px;
+  border: 1px solid black;
+  box-shadow: 
+  rgba(14, 30, 37, 0.12) 0px 6px 10px 0px, 
+  rgba(14, 30, 37, 0.32) 0px 6px 36px 0px; 
+  transition: 0.1s ease-in;
+}
+.man:hover{
+  transform: translateY(-5px);
+  box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px;
+}
+  
+
+
+
+
+
+.search2{
+  position: relative;
+  margin-left: 1100px;
+  cursor: pointer;
+  transition: 0.1s ease;
+}
+.search2:hover{
+  transform: translateY(-3px);
+}
+.mail{
+  position: relative;
+  margin-left: 1200px;
+  cursor: pointer;
+  transition: 0.1s ease;
+}
+.mail:hover{
+  transform: translateY(-3px);
+}
+
+.salestext{
+  margin-left: 26.5%;
+  margin-top: 14%;
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+.saleshead {
+  position: absolute;
+  margin-left: 16%;
+  margin-top: 17%;
+  font-weight: 700;
+  font-size: 35px;
+  animation: flicker 1.5s infinite alternate;
+  color: red;
+}
+
+@keyframes flicker {
+  0%, 20%, 100% {
+    opacity: 1;
+    color: red;
+  }
+  10%, 30%, 50%, 70% {
+    opacity: 0.5;
+    color: blue;
+  }
+  40%, 60% {
+    opacity: 0;
+    color: darkviolet;
+  }
+}
+
+.salesparagraph{
+  position: absolute;
+  margin-left: 23.5%;
+  margin-top: 22%;
+  font-size: 12px;
+  width: 20%;
+}
+.button{
+  position: absolute;
+  margin-left: 28.3%;
+  margin-top: 30%;
+  border: 1.5px solid black;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom:10px;
+  padding-right: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  cursor: pointer;
+}
+.button:hover{
+  background-color: black;
+  color: white;
+}
+.image1{
+  margin-top: 650px;
+  margin-left: 30px;
+  position: absolute;
+  transition: 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border: 2px solid black;
+}
+.image1:hover{
+  transform: scale(1.1);
+}
+.video1{
+  position: absolute;
+  width: 270px;
+  margin-left: 500px;
+  margin-top: 601px;
+  transition: 0.3s ease;
+  border: 2px solid black;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.video1:hover{
+  transform: scale(1.1);
+}
+.image2{
+position: absolute;
+margin-left: 940px;
+margin-top: 650px;
+transition: 0.3s ease;
+border: 2px solid black;
+box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.image2:hover{
+   transform: scale(1.1); 
+}
+.cart{
+  position: absolute;
+  margin-left: 1120px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.1s ease;
+}
+.cart:hover{
+  transform: translateY(-5px);
+}
+.featuredbutton{
+  position: absolute;
+  margin-top: 1006px;
+  margin-left: 66px;
+  color: white;
+  border: 2px solid white;
+  padding: 5px 77px 5px 77px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.featuredbutton:hover{
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+}
+
+.featuredbutton1{
+  position: absolute;
+  margin-top: 1035px;
+  margin-left: 590px;
+  color: black;
+  border: 2px solid black;
+  padding: 5px 5px 5px 5px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.featuredbutton1:hover{
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+}
+.featuredbutton2{
+  position: absolute;
+  margin-top: 1006px;
+  margin-left: 980px;
+  color: black;
+  border: 2px solid black;
+  padding: 5px 77px 5px 77px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.featuredbutton2:hover{
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+}
+
+
+@media (max-width: 591px) {
+  .Parentcontent{
+    width: 767px;
+    height: 620px;
+  }
+  .man{
+    display: flex;
+    width: 190px;
+    margin-left: 295px;
+    position: absolute;
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }
+  .salesparagraph{
+    width: 420px;
+    margin-top: 400px;
+    margin-left: 190px;
+    font-size: 15px;
+  }
+  .saleshead{
+    margin-top: 325px;
+    margin-left: 120px;
+    width: 550px;
+    font-size: 45px;
+  }
+  .salestext{
+    margin-top: 295px;
+    margin-left: 298px;
+    width: 200px; 
+    font-size: 30px;
+    font-weight: 550;
+  }
+  .button{
+    font-size: 13px;
+    margin-top: 490px;
+    margin-left: 340px;
+    width: 100px
+  }
+  .hat{
+    display: none;
+  }
+  .mail{
+    display: none;
+  }
+  .search2{
+    display: none;
+  }
+  .NavContent{
+    display: none;
+  }
+  .Logo{
+     position: absolute;
+     margin-left: 30px;
+    }
+    .af{
+      display: none;
+    }
+    .cart{
+      display: none;
+    }
+    .image1{
+        margin-left: 250px;
+        width: 304px;
+        
+    }
+    .featuredbutton{
+      margin-left: 290px;
+      width: 235px;
+    }
+    .video1{
+       margin-top: 1100px;
+       margin-left: 225px;
+       width: 350px;
+    }
+    .featuredbutton1{
+      margin-left: 356px;
+      width: 90px;
+      margin-top: 1670px;
+    }
+    .featuredbutton2{
+      display: flex;
+      margin-left: 280px;
+      margin-top: 2100px;
+      width: 232px;
+    }
+    .image2{
+      display: flex;
+      margin-left: 250px;
+      margin-top: 1750px;
+      width: 304px;
+    }
+
+}
+
+
+@media (max-width: 768px) and (min-width: 590px){
+  .Parentcontent{
+    width: 767px;
+    height: 598px;
+  }
+  .man{
+    display: flex;
+    width: 160px;
+    margin-left: 315px;
+    position: absolute;
+    margin-top: 40px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }
+  .salesparagraph{
+    width: 420px;
+    margin-top: 375px;
+    margin-left: 205px;
+    font-size: 15px;
+  }
+  .saleshead{
+    margin-top: 315px;
+    margin-left: 165px;
+    width: 550px;
+    font-size: 40px;
+  }
+  .salestext{
+    margin-top: 286px;
+    margin-left: 320px;
+    width: 200px; 
+    font-size: 25px;
+    font-weight: 550;
+  }
+  .button{
+    font-size: 13px;
+    margin-top: 460px;
+    margin-left: 355px;
+    width: 90px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .hat{
+    display: none;
+  }
+  .mail{
+    display: none;
+  }
+  .search2{
+    display: none;
+  }
+  .NavContent{
+    display: none;
+  }
+  .Logo{
+     position: absolute;
+     margin-left: 30px;
+    }
+    .af{
+      display: none;
+    }
+    .cart{
+      display: none;
+    }
+    .image1{
+      margin-left: 250px;
+      width: 304px;
+      
+  }
+  .featuredbutton{
+    margin-left: 285px;
+    width: 235px;
+  }
+  .video1{
+     margin-top: 1100px;
+     margin-left: 225px;
+     width: 350px;
+  }
+  .featuredbutton1{
+    margin-left: 360px;
+    width: 90px;
+    margin-top: 1670px;
+  }
+  .featuredbutton2{
+    display: flex;
+    margin-left: 285px;
+    margin-top: 2100px;
+    width: 232px;
+  }
+  .image2{
+    display: flex;
+    margin-left: 250px;
+    margin-top: 1750px;
+    width: 304px;
+  }
+
+    
+}
+
+@media (max-width: 992px) and (min-width: 769px) {
+  .Parentcontent{
+    width: 989px;
+    height: 550px;
+  }
+  .man{
+    display: flex;
+    width: 250px;
+    margin-left: 690px;
+    position: absolute;
+    margin-top: 40px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }
+
+  .salesparagraph{
+    width: 420px;
+    margin-top: 250px;
+    margin-left: 160px;
+    font-size: 15px;
+  }
+  .saleshead{
+    margin-top: 175px;
+    margin-left: 115px;
+    width: 550px;
+    font-size: 40px;
+  }
+  .salestext{
+    margin-top: 140px;
+    margin-left: 265px;
+    width: 200px; 
+    font-size: 25px;
+    font-weight: 550;
+  }
+  .button{
+    font-size: 13px;
+    margin-top: 340px;
+    margin-left: 300px;
+    width: 100px
+  }
+  .mail{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 950px;
+    position: absolute;
+  }
+  .search2{
+    display: flex;
+    margin-top: 15px;
+    margin-left: 910px;
+    position: absolute;
+  }
+  .NavContent{
+    display: flex;
+    position: absolute;
+    margin-left: 330px;
+  }
+  .af{
+    margin-top: 10px;
+    margin-left: 160px;
+    position: absolute;
+  }
+  .Logo{
+     position: absolute;
+     margin-left: 30px;
+    }
+    .cart{
+      margin-left: 870px;
+    }
+    .image1{
+      margin-left: 40px;
+      width: 304px;
+      
+  }
+  .featuredbutton{
+    margin-left: 75px;
+    width: 235px;
+  }
+  .video1{
+     margin-top: 1120px;
+     margin-left: 325px;
+     width: 350px;
+  }
+  .featuredbutton1{
+    margin-left: 460px;
+    width: 90px;
+    margin-top: 1680px;
+  }
+  .featuredbutton2{
+    display: flex;
+    margin-left: 685px;
+    margin-top: 1006px;
+    width: 232px;
+  }
+  .image2{
+    display: flex;
+    margin-left: 650px;
+    margin-top: 650px;
+    width: 304px;
+  }
+
+    
+  }
+@media (max-width:1200px) and (min-width:993px){
+  .Parentcontent{
+    width: 1199px;
+    height: 530px;
+    position: absolute;
+  }
+  .man{
+    display: flex;
+    width: 280px;
+    margin-left: 800px;
+    position: absolute;
+    margin-top: 50px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }
+
+  .salesparagraph{
+    width: 420px;
+    margin-top: 270px;
+    margin-left: 140px;
+    font-size: 15px;
+  }
+  .saleshead{
+    margin-top: 210px;
+    margin-left: 105px;
+    width: 550px;
+    font-size: 40px;
+  }
+  .salestext{
+    margin-top: 180px;
+    margin-left: 260px;
+    width: 200px; 
+    font-size:30px;
+    font-weight: 550;
+  }
+  .button{
+    font-size: 13px;
+    margin-top: 350px;
+    margin-left: 300px;
+    width: 100px
+  }
+  .mail{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 1150px;
+    position: absolute;
+  }
+  .search2{
+    display: flex;
+    margin-top: 15px;
+    margin-left: 1100px;
+    position: absolute;
+  }
+  .NavContent{
+    display: flex;
+    position: absolute;
+    margin-left: 360px;
+  }
+  .af{
+    margin-top: 10px;
+    margin-left: 160px;
+    position: absolute;
+  }
+  .Logo{
+     position: absolute;
+     margin-left: 30px;
+    }
+    .cart{
+      margin-left: 1050px;
+    }
+    .image1{
+      margin-left: 60px;
+      width: 304px;
+      
+  }
+  .featuredbutton{
+    margin-left: 95px;
+    width: 235px;
+  }
+  .video1{
+     margin-top: 560px;
+     margin-left: 435px;
+     width: 350px;
+  }
+  .featuredbutton1{
+    margin-left: 575px;
+    width: 90px;
+    margin-top: 1125px;
+  }
+  .featuredbutton2{
+    display: flex;
+    margin-left: 885px;
+    margin-top: 1006px;
+    width: 232px;
+  }
+  .image2{
+    display: flex;
+    margin-left: 850px;
+    margin-top: 650px;
+    width: 304px;
+  }
+
+    
+}
+ 
+
+@media (max-width:1440px) and (min-width: 1201px){
+  .Parentcontent{
+    width: 1439px;
+    height: 530px;
+  }
+  .man{
+    display: flex;
+    width: 310px;
+    margin-left: 1000px;
+    position: absolute;
+    margin-top: 36px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }
+
+  .salesparagraph{
+    width: 420px;
+    margin-top: 280px;
+    margin-left: 240px;
+    font-size: 15px;
+  }
+  .saleshead{
+    margin-top: 210px;
+    margin-left: 175px;
+    width: 550px;
+    font-size: 45px;
+  }
+  .salestext{
+    margin-top: 180px;
+    margin-left: 340px;
+    width: 200px; 
+    font-size:30px;
+    font-weight: 550;
+  }
+  .button{
+    font-size: 13px;
+    margin-top: 365px;
+    margin-left: 385px;
+    width: 100px
+  }
+  .mail{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 1400px;
+    width: 30px;
+    position: absolute;
+  }
+  .search2{
+    display: flex;
+    margin-top: 15px;
+    margin-left: 1360px;
+    position: absolute;
+    width: 30px;
+  }
+  .NavContent{
+    display: flex;
+    position: absolute;
+    margin-left: 455px;
+  }
+  .af{
+    margin-top: 10px;
+    margin-left: 160px;
+    position: absolute;
+  }
+  .Logo{
+     position: absolute;
+     margin-left: 30px;
+    }
+    .cart{
+      margin-left: 1320px;
+      width: 30px;
+    }
+    .image1{
+      margin-left: 90px;
+      width: 304px;
+      
+  }
+  .featuredbutton{
+    margin-left: 112px;
+    width: 235px;
+  }
+  .video1{
+     margin-top: 560px;
+     margin-left: 560px;
+     width: 350px;
+  }
+  .featuredbutton1{
+    margin-left: 690px;
+    width: 90px;
+    margin-top: 1125px;
+  }
+  .featuredbutton2{
+    display: flex;
+    margin-left: 1105px;
+    margin-top: 1006px;
+    width: 232px;
+  }
+  .image2{
+    display: flex;
+    margin-left: 1070px;
+    margin-top: 650px;
+    width: 304px;
+  }
+
+    
+
+}
