@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .NavBar{
   background-color: rgb(255, 255, 255);
   height: 60px;
@@ -17,6 +16,10 @@
   padding-left: 40px;
   font-family: 'Times New Roman', Times, serif;
   font-size: 17px;
+}
+.Featured{
+  width: 100%;
+  height: 100%;
 }
 
 .Home{
@@ -76,18 +79,23 @@
 .Parentcontent{
   display:flex;
   background: linear-gradient(to right, #f0f4f8, #d9e2ec);
-  height: 532px;
+  height: 550px;
   width: 100%;
+  max-width: 1279px;
+  margin: 0 auto;
 }
 
 .content{
   display: flex;
-  
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
 }
 .man{
-  position:absolute;
+  position:relative;
   margin-left: 850px;
   margin-top: 40px;
+  width: 100%;
   border: 1px solid black;
   box-shadow: 
   rgba(14, 30, 37, 0.12) 0px 6px 10px 0px, 
@@ -115,7 +123,7 @@
 }
 .mail{
   position: relative;
-  margin-left: 1200px;
+  margin-left: 1100px;
   cursor: pointer;
   transition: 0.1s ease;
 }
@@ -180,6 +188,8 @@
 }
 .image1{
   margin-top: 650px;
+  max-width: 100%;
+  height: auto;
   margin-left: 30px;
   position: absolute;
   transition: 0.3s ease;
@@ -191,7 +201,8 @@
 }
 .video1{
   position: absolute;
-  width: 270px;
+  width: 100%;
+  height: auto;
   margin-left: 500px;
   margin-top: 601px;
   transition: 0.3s ease;
@@ -204,6 +215,8 @@
 .image2{
 position: absolute;
 margin-left: 940px;
+max-width: 100%;
+height: auto;
 margin-top: 650px;
 transition: 0.3s ease;
 border: 2px solid black;
@@ -465,15 +478,15 @@ box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rg
     
 }
 
-@media (max-width: 992px) and (min-width: 769px) {
+@media (max-width: 960px) and (min-width: 769px) {
   .Parentcontent{
-    width: 989px;
-    height: 550px;
+    width: 960px;
+    height: 550px;  
   }
   .man{
     display: flex;
-    width: 250px;
-    margin-left: 690px;
+    width: 300px;
+    margin-left: 630px;
     position: absolute;
     margin-top: 40px;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
@@ -482,18 +495,18 @@ box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rg
   .salesparagraph{
     width: 420px;
     margin-top: 250px;
-    margin-left: 160px;
+    margin-left: 120px;
     font-size: 15px;
   }
   .saleshead{
     margin-top: 175px;
-    margin-left: 115px;
+    margin-left: 85px;
     width: 550px;
     font-size: 40px;
   }
   .salestext{
     margin-top: 140px;
-    margin-left: 265px;
+    margin-left: 225px;
     width: 200px; 
     font-size: 25px;
     font-weight: 550;
@@ -501,19 +514,19 @@ box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rg
   .button{
     font-size: 13px;
     margin-top: 340px;
-    margin-left: 300px;
+    margin-left: 260px;
     width: 100px
   }
   .mail{
     display: flex;
     margin-top: 10px;
-    margin-left: 950px;
+    margin-left: 920px;
     position: absolute;
   }
   .search2{
     display: flex;
     margin-top: 15px;
-    margin-left: 910px;
+    margin-left: 880px;
     position: absolute;
   }
   .NavContent{
@@ -531,72 +544,71 @@ box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rg
      margin-left: 30px;
     }
     .cart{
-      margin-left: 870px;
+      margin-top: 10px;
+      margin-left: 840px;
     }
     .image1{
-      margin-left: 40px;
+      margin-left: 80px;
       width: 304px;
       
   }
   .featuredbutton{
-    margin-left: 75px;
+    margin-left: 115px;
     width: 235px;
   }
   .video1{
      margin-top: 1120px;
-     margin-left: 325px;
+     margin-left: 310px;
      width: 350px;
   }
   .featuredbutton1{
-    margin-left: 460px;
+    margin-left: 440px;
     width: 90px;
     margin-top: 1680px;
   }
   .featuredbutton2{
     display: flex;
-    margin-left: 685px;
+    margin-left: 615px;
     margin-top: 1006px;
     width: 232px;
   }
   .image2{
     display: flex;
-    margin-left: 650px;
+    margin-left: 580px;
     margin-top: 650px;
     width: 304px;
   }
-
+}
     
-  }
-@media (max-width:1200px) and (min-width:993px){
-  .Parentcontent{
-    width: 1199px;
-    height: 530px;
-    position: absolute;
-  }
+  
+@media (min-width:961px)and (max-width:1040px){
+   .Parentcontent{
+    width: 1023px;
+}
   .man{
     display: flex;
     width: 280px;
-    margin-left: 800px;
-    position: absolute;
-    margin-top: 50px;
-    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+   position: absolute;
+    margin-left:680px;
+    margin-top: 40px;
+    
   }
 
   .salesparagraph{
     width: 420px;
     margin-top: 270px;
-    margin-left: 140px;
+    margin-left: 160px;
     font-size: 15px;
   }
   .saleshead{
     margin-top: 210px;
-    margin-left: 105px;
+    margin-left: 130px;
     width: 550px;
     font-size: 40px;
   }
   .salestext{
     margin-top: 180px;
-    margin-left: 260px;
+    margin-left: 280px;
     width: 200px; 
     font-size:30px;
     font-weight: 550;
@@ -604,25 +616,25 @@ box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rg
   .button{
     font-size: 13px;
     margin-top: 350px;
-    margin-left: 300px;
+    margin-left: 320px;
     width: 100px
   }
   .mail{
     display: flex;
     margin-top: 10px;
-    margin-left: 1150px;
+    margin-left: 980px;
     position: absolute;
   }
   .search2{
-    display: flex;
+    display:flex;
     margin-top: 15px;
-    margin-left: 1100px;
+    margin-left: 940px;
     position: absolute;
   }
   .NavContent{
     display: flex;
     position: absolute;
-    margin-left: 360px;
+    margin-left: 350px;
   }
   .af{
     margin-top: 10px;
@@ -634,147 +646,148 @@ box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rg
      margin-left: 30px;
     }
     .cart{
-      margin-left: 1050px;
+      margin-left: 900px;
+      display: flex;
     }
     .image1{
-      margin-left: 60px;
-      width: 304px;
+      margin-left: 50px;
+      margin-top: 600px;
+      width: 250px;
       
   }
   .featuredbutton{
-    margin-left: 95px;
-    width: 235px;
+    margin-left: 55px;
+    width: 233px;
+    margin-top: 860px;
   }
   .video1{
      margin-top: 560px;
-     margin-left: 435px;
-     width: 350px;
+     margin-left: 385px;
+     width: 250px;
   }
   .featuredbutton1{
-    margin-left: 575px;
+    margin-left: 470px;
     width: 90px;
-    margin-top: 1125px;
+    margin-top: 955px;
   }
   .featuredbutton2{
     display: flex;
-    margin-left: 885px;
-    margin-top: 1006px;
+    margin-left: 732px;
+    margin-top: 880px;
     width: 232px;
   }
   .image2{
     display: flex;
-    margin-left: 850px;
-    margin-top: 650px;
-    width: 304px;
+    margin-left: 722px;
+    margin-top: 600px;
+    width: 250px;
   }
 
     
 }
- 
 
-@media (max-width:1440px) and (min-width: 1201px){
+@media (min-width:1041px){
   .Parentcontent{
-    width: 1439px;
-    height: 530px;
-  }
-  .man{
-    display: flex;
-    width: 310px;
-    margin-left: 1000px;
-    position: absolute;
-    margin-top: 36px;
-    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-  }
+   width: 1263px;
+   margin-left: 0;
+}
+ .man{
+   display: flex;
+   width: 300px;
+  position: absolute;
+   margin-left:880px;
+   margin-top: 40px;
+   
+ }
 
-  .salesparagraph{
-    width: 420px;
-    margin-top: 280px;
-    margin-left: 240px;
-    font-size: 15px;
-  }
-  .saleshead{
-    margin-top: 210px;
-    margin-left: 175px;
-    width: 550px;
-    font-size: 45px;
-  }
-  .salestext{
-    margin-top: 180px;
-    margin-left: 340px;
-    width: 200px; 
-    font-size:30px;
-    font-weight: 550;
-  }
-  .button{
-    font-size: 13px;
-    margin-top: 365px;
-    margin-left: 385px;
-    width: 100px
-  }
-  .mail{
-    display: flex;
-    margin-top: 10px;
-    margin-left: 1400px;
-    width: 30px;
+ .salesparagraph{
+   width: 420px;
+   margin-top: 270px;
+   margin-left: 180px;
+   font-size: 15px;
+ }
+ .saleshead{
+   margin-top: 210px;
+   margin-left: 150px;
+   width: 550px;
+   font-size: 40px;
+ }
+ .salestext{
+   margin-top: 180px;
+   margin-left: 300px;
+   width: 200px; 
+   font-size:30px;
+   font-weight: 550;
+ }
+ .button{
+   font-size: 13px;
+   margin-top: 350px;
+   margin-left: 340px;
+   width: 100px
+ }
+ .mail{
+   display: flex;
+   margin-top: 10px;
+   margin-left: 1210px;
+   position: absolute;
+ }
+ .search2{
+   display:flex;
+   margin-top: 15px;
+   margin-left: 1170px;
+   position: absolute;
+ }
+ .NavContent{
+   display: flex;
+   position: absolute;
+   margin-left: 450px;
+ }
+ .af{
+   margin-top: 10px;
+   margin-left: 160px;
+   position: absolute;
+ }
+ .Logo{
     position: absolute;
-  }
-  .search2{
-    display: flex;
-    margin-top: 15px;
-    margin-left: 1360px;
-    position: absolute;
-    width: 30px;
-  }
-  .NavContent{
-    display: flex;
-    position: absolute;
-    margin-left: 455px;
-  }
-  .af{
-    margin-top: 10px;
-    margin-left: 160px;
-    position: absolute;
-  }
-  .Logo{
-     position: absolute;
-     margin-left: 30px;
-    }
-    .cart{
-      margin-left: 1320px;
-      width: 30px;
-    }
-    .image1{
-      margin-left: 90px;
-      width: 304px;
-      
-  }
-  .featuredbutton{
-    margin-left: 112px;
-    width: 235px;
-  }
-  .video1{
-     margin-top: 560px;
-     margin-left: 560px;
-     width: 350px;
-  }
-  .featuredbutton1{
-    margin-left: 690px;
-    width: 90px;
-    margin-top: 1125px;
-  }
-  .featuredbutton2{
-    display: flex;
-    margin-left: 1105px;
-    margin-top: 1006px;
-    width: 232px;
-  }
-  .image2{
-    display: flex;
-    margin-left: 1070px;
-    margin-top: 650px;
-    width: 304px;
-  }
+    margin-left: 30px;
+   }
+   .cart{
+     margin-left: 1125px;
+     display: flex;
+   }
+   .image1{
+     margin-left: 80px;
+     margin-top: 600px;
+     width: 300px;
+     
+ }
+ .featuredbutton{
+   margin-left: 115px;
+   width: 233px;
+   margin-top: 920px;
+ }
+ .video1{
+    margin-top: 560px;
+    margin-left: 485px;
+    width: 300px;
+ }
+ .featuredbutton1{
+   margin-left: 590px;
+   width: 90px;
+   margin-top: 1040px;
+ }
+ .featuredbutton2{
+   display: flex;
+   margin-left: 922px;
+   margin-top: 920px;
+   width: 232px;
+ }
+ .image2{
+   display: flex;
+   margin-left: 892px;
+   margin-top: 600px;
+   width: 300px;
+ }
 
-    
-
+   
 }
